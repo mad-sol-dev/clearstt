@@ -1,0 +1,14 @@
+{
+  "name": "Clear Speech to Text",
+  "description": "Record from the microphone, transcribe via a local OpenAI-compatible service, then copy text to the clipboard and paste into the focused app (Shift+Insert; Ctrl+Shift+Insert in terminals).\n\nClipboard: text is written to the clipboard when you stop a recording so it can be pasted, and whatever was in the clipboard before is put back afterwards. Restoring it means the extension reads the current clipboard — it does that only to put the content back, and never sends clipboard contents anywhere.\n\nRecent transcripts: the last few are kept in memory so you can copy one back from the panel menu when a paste went nowhere. They are never written to disk and are dropped when the extension is disabled, which includes locking the screen. Set the count to 0 in preferences to turn the list off.\n\nLanguage: the spoken language is detected automatically by default; German or English can be pinned in the panel menu.\n\nNetwork: stopping a recording sends audio to the transcription service configured in settings; by default this is a service on localhost, so no audio leaves the machine.\n\nKeyboard: global shortcut to toggle recording is on by default Super+z; change or disable it in extension preferences. You can still start and stop recording from the panel icon.",
+  "uuid": "clearstt@m-a-d.solutions",
+  "url": "https://github.com/mad-sol-dev/clearstt",
+  "settings-schema": "org.gnome.shell.extensions.clearstt",
+  "shell-version": [
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "gettext-domain": "clearstt"
+}

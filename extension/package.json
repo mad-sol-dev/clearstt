@@ -1,0 +1,49 @@
+{
+  "name": "clearstt",
+  "version": "1.0.0",
+  "description": "Speech-to-text GNOME Shell extension — record audio and transcribe via an OpenAI-compatible service",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build.ts",
+    "install": "./install.sh",
+    "clean": "rm -rf dist/",
+    "check": "bun x tsc --noEmit --project tsconfig.json",
+    "pack": "bun run build.ts && rm -f clearstt-ego-upload.zip && (cd dist/clearstt@m-a-d.solutions && zip -r ../../clearstt-ego-upload.zip . -x 'schemas/gschemas.compiled')",
+    "info": "gnome-extensions info clearstt@m-a-d.solutions",
+    "settings": "dconf dump /org/gnome/shell/extensions/clearstt/",
+    "prefs": "gnome-extensions prefs clearstt@m-a-d.solutions",
+    "errors": "gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell --method org.gnome.Shell.Extensions.GetExtensionErrors 'clearstt@m-a-d.solutions'",
+    "i18n:refresh": "xgettext --from-code=UTF-8 --language=JavaScript --keyword=_ --keyword=N_ -o clearstt.pot src/prefs.ts src/extension.ts && for po in locale/*/LC_MESSAGES/clearstt.po; do msgmerge --update --backup=none \"$po\" clearstt.pot; done",
+    "dev": "bun run build.ts && ./install.sh && dbus-run-session gnome-shell --devkit --wayland"
+  },
+  "devDependencies": {
+    "@girs/adw-1": "^1.10.0-4.0.0-rc.15",
+    "@girs/clutter-18": "^18.0.0-4.0.0-rc.15",
+    "@girs/gio-2.0": "^2.88.0-4.0.0-rc.15",
+    "@girs/glib-2.0": "^2.88.0-4.0.0-rc.15",
+    "@girs/gnome-shell": "^50.0.0",
+    "@girs/gobject-2.0": "^2.88.0-4.0.0-rc.15",
+    "@girs/gst-1.0": "^1.28.1-4.0.0-rc.15",
+    "@girs/gtk-4.0": "^4.23.0-4.0.0-rc.15",
+    "@girs/meta-18": "^18.0.0-4.0.0-rc.15",
+    "@girs/shell-18": "^18.0.0-4.0.0-rc.15",
+    "@girs/soup-3.0": "^3.6.6-4.0.0-rc.15",
+    "@girs/st-18": "^18.0.0-4.0.0-rc.15",
+    "typescript": "^5.6.0"
+  },
+  "overrides": {
+    "@girs/gnome-shell": {
+      "@girs/adw-1": "^1.10.0-4.0.0-rc.15",
+      "@girs/clutter-18": "^18.0.0-4.0.0-rc.15",
+      "@girs/gio-2.0": "^2.88.0-4.0.0-rc.15",
+      "@girs/glib-2.0": "^2.88.0-4.0.0-rc.15",
+      "@girs/gobject-2.0": "^2.88.0-4.0.0-rc.15",
+      "@girs/gst-1.0": "^1.28.1-4.0.0-rc.15",
+      "@girs/gtk-4.0": "^4.23.0-4.0.0-rc.15",
+      "@girs/meta-18": "^18.0.0-4.0.0-rc.15",
+      "@girs/shell-18": "^18.0.0-4.0.0-rc.15",
+      "@girs/soup-3.0": "^3.6.6-4.0.0-rc.15",
+      "@girs/st-18": "^18.0.0-4.0.0-rc.15"
+    }
+  }
+}

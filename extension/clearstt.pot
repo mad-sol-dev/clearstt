@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-02 13:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/prefs.ts:19 src/prefs.ts:365
+msgid "Reset to default"
+msgstr ""
+
+#: src/prefs.ts:53 src/extension.ts:933 src/extension.ts:1008
+#: src/extension.ts:1010 src/extension.ts:1015 src/extension.ts:1130
+#: src/extension.ts:1288 src/extension.ts:1297
+msgid "Speech to Text"
+msgstr ""
+
+#: src/prefs.ts:59
+msgid "Transcription Service"
+msgstr ""
+
+#: src/prefs.ts:60
+msgid "Local or remote OpenAI-compatible transcription endpoint."
+msgstr ""
+
+#: src/prefs.ts:65
+msgid "API base URL"
+msgstr ""
+
+#: src/prefs.ts:77
+msgid "API key (optional)"
+msgstr ""
+
+#: src/prefs.ts:83
+msgid "Language (ISO code, or \"auto\" to detect)"
+msgstr ""
+
+#: src/prefs.ts:95
+msgid "Maximum recording length"
+msgstr ""
+
+#: src/prefs.ts:96
+msgid "Recording stops automatically after this many seconds"
+msgstr ""
+
+#: src/prefs.ts:103
+msgid "Also write to the PRIMARY selection"
+msgstr ""
+
+#: src/prefs.ts:104
+msgid "Overwrites the middle-click paste buffer; needed for terminals"
+msgstr ""
+
+#: src/prefs.ts:110
+msgid "Model"
+msgstr ""
+
+#: src/prefs.ts:122
+msgid "Temperature"
+msgstr ""
+
+#: src/prefs.ts:123
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr ""
+
+#: src/prefs.ts:136
+msgid "Request Timeout"
+msgstr ""
+
+#: src/prefs.ts:137
+msgid "Seconds to wait for transcription"
+msgstr ""
+
+#: src/prefs.ts:149
+msgid "Behavior"
+msgstr ""
+
+#: src/prefs.ts:154
+msgid "Show Icon in Top Bar"
+msgstr ""
+
+#: src/prefs.ts:155
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr ""
+
+#: src/prefs.ts:165
+msgid "Left"
+msgstr ""
+
+#: src/prefs.ts:166
+msgid "Center"
+msgstr ""
+
+#: src/prefs.ts:167
+msgid "Right"
+msgstr ""
+
+#: src/prefs.ts:170
+msgid "Tray Horizontal Alignment"
+msgstr ""
+
+#: src/prefs.ts:171
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr ""
+
+#: src/prefs.ts:211
+msgid "Top Bar Icon Position"
+msgstr ""
+
+#: src/prefs.ts:212
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr ""
+
+#: src/prefs.ts:226
+msgid "Paste placeholder text"
+msgstr ""
+
+#: src/prefs.ts:227
+msgid "Do nothing (no clipboard / paste)"
+msgstr ""
+
+#: src/prefs.ts:230
+msgid "When there is no speech"
+msgstr ""
+
+#: src/prefs.ts:231
+msgid "If the model returns no transcribed words"
+msgstr ""
+
+#: src/prefs.ts:261
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr ""
+
+#: src/prefs.ts:286
+msgid "Clipboard"
+msgstr ""
+
+#: src/prefs.ts:287
+msgid ""
+"The transcript is pasted through the clipboard, so it has to overwrite what "
+"is in there."
+msgstr ""
+
+#: src/prefs.ts:292
+msgid "Restore Clipboard After Pasting"
+msgstr ""
+
+#: src/prefs.ts:293
+msgid ""
+"Put the previous content back once the transcript has been pasted. CLIPBOARD "
+"only, not PRIMARY."
+msgstr ""
+
+#: src/prefs.ts:299
+msgid "Restore Delay"
+msgstr ""
+
+#: src/prefs.ts:300
+msgid ""
+"Milliseconds to wait after the paste keystroke. Too short and the target "
+"pastes the old content."
+msgstr ""
+
+#: src/prefs.ts:313
+msgid "Recent Dictations Kept"
+msgstr ""
+
+#: src/prefs.ts:314
+msgid ""
+"Offered in the panel menu for copying back — the way out when a paste went "
+"nowhere. Memory only, 0 = off."
+msgstr ""
+
+#: src/prefs.ts:326
+msgid "Play Sound Effects"
+msgstr ""
+
+#: src/prefs.ts:327
+msgid "Play tone when recording starts and stops"
+msgstr ""
+
+#: src/prefs.ts:333
+msgid "Sound Volume"
+msgstr ""
+
+#: src/prefs.ts:334
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr ""
+
+#: src/prefs.ts:346
+msgid "Keyboard Shortcut"
+msgstr ""
+
+#: src/prefs.ts:347
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr ""
+
+#: src/prefs.ts:352
+msgid "Enable Keyboard Shortcuts"
+msgstr ""
+
+#: src/prefs.ts:353
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr ""
+
+#: src/prefs.ts:359
+msgid "Toggle Recording"
+msgstr ""
+
+#: src/prefs.ts:383 src/prefs.ts:421
+msgid "Disabled"
+msgstr ""
+
+#: src/prefs.ts:441
+msgid "Press shortcut…"
+msgstr ""
+
+#: src/extension.ts:556
+msgid "Automatic"
+msgstr ""
+
+#: src/extension.ts:557
+msgid "German"
+msgstr ""
+
+#: src/extension.ts:558
+msgid "English"
+msgstr ""
+
+#: src/extension.ts:790 src/extension.ts:1029
+msgid "Checking service…"
+msgstr ""
+
+#: src/extension.ts:797 src/extension.ts:876
+msgid "Language"
+msgstr ""
+
+#: src/extension.ts:816
+msgid "Output in English"
+msgstr ""
+
+#: src/extension.ts:817
+msgid "Remove filler words"
+msgstr ""
+
+#: src/extension.ts:818
+msgid "Mark speech pauses"
+msgstr ""
+
+#: src/extension.ts:838
+msgid "Unload model (free VRAM)"
+msgstr ""
+
+#: src/extension.ts:842
+msgid "Settings"
+msgstr ""
+
+#: src/extension.ts:875
+msgid "Service default"
+msgstr ""
+
+#: src/extension.ts:904
+msgid "Recent dictations"
+msgstr ""
+
+#: src/extension.ts:907
+msgid "Nothing dictated yet"
+msgstr ""
+
+#: src/extension.ts:933
+msgid "Copied to clipboard."
+msgstr ""
+
+#: src/extension.ts:1008
+msgid "Model unloaded, VRAM released."
+msgstr ""
+
+#: src/extension.ts:1010 src/extension.ts:1015
+msgid "Could not unload the model."
+msgstr ""
+
+#: src/extension.ts:1025
+msgid "No service URL configured"
+msgstr ""
+
+#: src/extension.ts:1033
+msgid "Invalid service URL"
+msgstr ""
+
+#: src/extension.ts:1042 src/extension.ts:1052
+msgid "Service unreachable"
+msgstr ""
+
+#: src/extension.ts:1048
+msgid "Ready"
+msgstr ""
+
+#: src/extension.ts:1049
+msgid "Idle"
+msgstr ""
+
+#: src/extension.ts:1131
+msgid "Maximum recording length reached — transcribing now."
+msgstr ""
+
+#: src/extension.ts:1289
+msgid "Please set the API base URL in extension settings."
+msgstr ""
+
+#: src/extension.ts:1298
+msgid "Please set a transcription model in extension settings."
+msgstr ""
+
+#: src/extension.ts:1321 src/extension.ts:1442
+msgid "Speech to Text — Error"
+msgstr ""
+
+#: src/extension.ts:1322
+msgid "Failed to start recording."
+msgstr ""

@@ -1,0 +1,26 @@
+[Unit]
+Description=Local STT service (faster-whisper, OpenAI-compatible)
+Documentation=https://github.com/mad-sol-dev/clearstt
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/clearstt/server
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+Environment=STT_HOST=127.0.0.1
+Environment=STT_PORT=5112
+Environment=STT_MODEL=large-v3
+Environment=STT_DEVICE=cuda
+Environment=STT_COMPUTE_TYPE=int8_float16
+Environment=STT_LANGUAGE=de
+Environment=STT_IDLE_UNLOAD_SECONDS=900
+# Optional, for dictating from another device (see README, "Remote
+# dictation"): STT_HOST, STT_REMOTE_NETWORKS, STT_REMOTE_API_KEY.
+# Read after the lines above, so it can override STT_HOST.
+EnvironmentFile=-%h/.config/clearstt/remote.env
+ExecStart=%h/clearstt/server/.venv/bin/python stt_server.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

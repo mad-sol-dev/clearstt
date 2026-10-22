@@ -1,0 +1,194 @@
+# sk translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "Obnoviť predvolené"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "Hlas na text"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "Poskytovateľ OpenRouter"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr "API prihlasovacie údaje a nastavenia modelu pre prepis cez OpenRouter."
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "API kľúč"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "Model"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "Teplota"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "Teplota vzorkovania (0 = deterministické, 1 = kreatívnejšie)"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "Časový limit požiadavky"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "Sekundy čakania na prepis"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "Správanie"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "Zobraziť ikonu v hornom paneli"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr "Ak je vypnuté, ikona sa zobrazí len počas nahrávania alebo prepisu."
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "Vľavo"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "V strede"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "Vpravo"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "Vodorovné zarovnanie na paneli"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "Umiestnite stavovú ikonu do ľavej, strednej alebo pravej časti hornej lišty."
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "Pozícia ikony na paneli"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "Poradie v tejto časti (− / +): vyššia hodnota = bližšie k vonkajšiemu okraju lišty."
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "Vložiť zástupný text"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "Nerobiť nič (bez schránky / vkladania)"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "Keď nie je reč"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "Ak model nevráti žiadne prepísané slová"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "Zástupný text (napr. …; nechajte prázdne, aby sa nič nevkladalo)"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "Prehrávať zvukové efekty"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "Prehrať tón pri spustení a zastavení nahrávania"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "Hlasitosť zvuku"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "Hlasitosť pre efekty spustenia/zastavenia (0 = stlmené, 100 = plná)"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "Klávesová skratka"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr ""
+"Stlačte kombináciu kláves kdekoľvek na spustenie alebo zastavenie nahrávania."
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "Povoliť klávesové skratky"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "Keď je vypnuté, klávesová skratka prepínania nahrávania je neaktívna"
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "Prepnúť nahrávanie"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "Zakázané"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "Stlačte skratku…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr "Nastavte prosím svoj OpenRouter API kľúč v nastaveniach rozšírenia."
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "Nastavte prosím model prepisu v nastaveniach rozšírenia."
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "Hlas na text — Chyba"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "Nepodarilo sa spustiť nahrávanie."
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "Nastavte prosím systémový prompt v nastaveniach rozšírenia."
+
+#~ msgid "System Prompt"
+#~ msgstr "Systémový prompt"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "Ikona mikrofónu je vždy viditeľná v paneli. Keď je skrytá, ikona sa "
+#~ "zobrazí počas nahrávania."

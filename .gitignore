@@ -1,0 +1,16 @@
+# Python (server/)
+.venv/
+__pycache__/
+*.pyc
+
+# Node/TypeScript (extension/)
+node_modules/
+dist/
+.env
+*.tsbuildinfo
+*.po~
+*.zip
+package-lock.json
+
+# GSettings compiled schema
+gschemas.compiled

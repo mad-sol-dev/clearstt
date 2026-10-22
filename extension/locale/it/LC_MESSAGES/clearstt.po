@@ -1,0 +1,198 @@
+# it translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "Ripristina predefinito"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "Voce in testo"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "Provider OpenRouter"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr ""
+"Credenziali API e impostazioni del modello per la trascrizione tramite "
+"OpenRouter."
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "Chiave API"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "Modello"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "Temperatura"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "Temperatura di campionamento (0 = deterministica, 1 = più creativa)"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "Timeout richiesta"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "Secondi di attesa per la trascrizione"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "Comportamento"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "Mostra icona nella barra superiore"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr "Se disattivata, l’icona appare solo durante la registrazione o la trascrizione."
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "Sinistra"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "Centro"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "Destra"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "Allineamento orizzontale nell’area di notifica"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "Posiziona l’icona di stato nella sezione sinistra, centrale o destra della barra superiore."
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "Posizione dell’icona nella barra"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "Ordine in quella sezione (− / +): valore più alto = più vicino al bordo esterno della barra."
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "Incolla testo segnaposto"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "Non fare nulla (nessun appunti / incolla)"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "Quando non c’è parlato"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "Se il modello non restituisce parole trascritte"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "Testo segnaposto (es. …; lasciare vuoto per non incollare nulla)"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "Riproduci effetti sonori"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "Riproduci un tono all'avvio e all'arresto della registrazione"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "Volume audio"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "Volume per effetti inizio/fine (0 = muto, 100 = massimo)"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "Scorciatoia da tastiera"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr ""
+"Premi una combinazione di tasti ovunque per avviare o fermare la "
+"registrazione."
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "Abilita scorciatoie da tastiera"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "Quando disattivato, il tasto di attivazione registrazione è inattivo"
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "Attiva/disattiva registrazione"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "Disabilitato"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "Premi la scorciatoia…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr ""
+"Imposta la tua chiave API OpenRouter nelle impostazioni dell'estensione."
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "Imposta un modello di trascrizione nelle impostazioni dell'estensione."
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "Voce in testo — Errore"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "Impossibile avviare la registrazione."
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "Imposta un prompt di sistema nelle impostazioni dell'estensione."
+
+#~ msgid "System Prompt"
+#~ msgstr "Prompt di sistema"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "Icona del microfono sempre visibile nel pannello. Quando nascosta, "
+#~ "l'icona appare durante la registrazione."

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="clearstt">
+  <schema
+    id="org.gnome.shell.extensions.clearstt"
+    path="/org/gnome/shell/extensions/clearstt/"
+  >
+    <!-- Base URL of the local STT service (OpenAI-compatible) -->
+    <key name="api-base-url" type="s">
+      <default>"http://127.0.0.1:5112"</default>
+      <summary>API base URL</summary>
+      <description>
+        Base URL of an OpenAI-compatible transcription service.
+        The extension appends /v1/audio/transcriptions.
+      </description>
+    </key>
+
+    <!-- Optional bearer token -->
+    <key name="api-key" type="s">
+      <default>""</default>
+      <summary>API key (optional)</summary>
+      <description>
+        Optional bearer token. Leave empty for a local service without authentication.
+      </description>
+    </key>
+
+    <!-- Language -->
+    <key name="language" type="s">
+      <default>"auto"</default>
+      <summary>Transcription language</summary>
+      <description>
+        ISO-639-1 code passed to the service, e.g. de or en, or "auto" to let
+        the service detect the spoken language. Leaving this empty is not the
+        same as auto: the field is then omitted and the service falls back to
+        its own configured default.
+      </description>
+    </key>
+
+    <!-- Maximum recording length -->
+    <key name="max-recording-seconds" type="i">
+      <default>300</default>
+      <range min="10" max="3600"/>
+      <summary>Maximum recording length (seconds)</summary>
+      <description>
+        Recording stops automatically after this many seconds.
+      </description>
+    </key>
+
+    <!-- Also write the PRIMARY selection -->
+    <key name="set-primary-selection" type="b">
+      <default>false</default>
+      <summary>Also write to the PRIMARY selection</summary>
+      <description>
+        When enabled, the transcript also replaces the middle-click paste buffer.
+        Required for pasting into terminals via Shift+Insert.
+      </description>
+    </key>
+
+    <!-- Restore the previous clipboard content after pasting -->
+    <key name="restore-clipboard" type="b">
+      <default>true</default>
+      <summary>Restore the clipboard after pasting</summary>
+      <description>
+        Save whatever is in the clipboard before the transcript overwrites it,
+        and put it back once the transcript has been pasted. Only the CLIPBOARD
+        selection is restored, not PRIMARY. Multi-format content (e.g. rich text
+        offered as both HTML and plain text) comes back in one format only.
+      </description>
+    </key>
+
+    <key name="clipboard-restore-delay" type="i">
+      <default>1500</default>
+      <range min="100" max="10000"/>
+      <summary>Clipboard restore delay (milliseconds)</summary>
+      <description>
+        How long to wait after the paste keystroke before restoring. There is no
+        signal for “the application has read the clipboard”, so this is a guess:
+        too short and the target pastes the old content instead of the transcript.
+        The previous content is only put back if the clipboard still holds the
+        transcript, so copying something else in the meantime is safe.
+      </description>
+    </key>
+
+    <!-- Keep recent dictations in the panel menu -->
+    <key name="history-size" type="i">
+      <default>5</default>
+      <range min="0" max="20"/>
+      <summary>Recent dictations kept</summary>
+      <description>
+        How many transcripts the panel menu offers for copying back to the
+        clipboard — the way out when a paste went nowhere because no text field
+        had focus. Kept in memory only: never written to disk, and dropped when
+        the extension is disabled, which includes locking the screen. 0 turns the
+        list off.
+      </description>
+    </key>
+
+    <!-- Output in English instead of the spoken language -->
+    <key name="translate-to-english" type="b">
+      <default>false</default>
+      <summary>Translate output to English</summary>
+      <description>
+        Ask the service to translate instead of transcribe.
+      </description>
+    </key>
+
+    <!-- Mechanical post-processing on the service side -->
+    <key name="remove-fillers" type="b">
+      <default>true</default>
+      <summary>Remove filler words</summary>
+      <description>
+        Strip hesitations and stutter repetitions from the transcript.
+      </description>
+    </key>
+
+    <key name="mark-pauses" type="b">
+      <default>true</default>
+      <summary>Mark speech pauses</summary>
+      <description>
+        Insert an ellipsis for longer pauses, a paragraph break for very long ones.
+      </description>
+    </key>
+
+    <!-- Transcription model -->
+    <key name="model" type="s">
+      <default>"large-v3"</default>
+      <summary>Transcription model</summary>
+      <description>
+        Model identifier passed to the transcription service.
+      </description>
+    </key>
+
+    <!-- Temperature -->
+    <key name="temperature" type="d">
+      <default>0.0</default>
+      <range min="0.0" max="1.0"/>
+      <summary>Temperature</summary>
+      <description>
+        Sampling temperature passed to the transcription service
+        (0 = deterministic, 1 = creative).
+      </description>
+    </key>
+
+    <!-- When the model returns no transcribed text (silence / empty) -->
+    <key name="empty-speech-action" type="s">
+      <choices>
+        <choice value="placeholder"/>
+        <choice value="skip"/>
+      </choices>
+      <default>"placeholder"</default>
+      <summary>When there is no speech</summary>
+      <description>
+        placeholder: paste the placeholder text below. skip: do not change clipboard or paste anything.
+      </description>
+    </key>
+
+    <key name="empty-speech-placeholder" type="s">
+      <default>"..."</default>
+      <summary>Placeholder text for empty transcription</summary>
+      <description>
+        Used when empty-speech-action is placeholder. If empty, behaves like skip.
+      </description>
+    </key>
+
+    <!-- left / center / right panel box (see Main.panel.addToStatusArea …, box) -->
+    <key name="panel-indicator-box" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>"left"</default>
+      <summary>Tray horizontal alignment</summary>
+      <description>
+        Which top-bar region holds the status icon: left (activities side), center (date area), or right (system status).
+      </description>
+    </key>
+
+    <!-- insert_child_at_index within the chosen box; meaning of “higher” depends on shell layout -->
+    <key name="panel-indicator-position" type="i">
+      <default>10</default>
+      <range min="0" max="100"/>
+      <summary>Panel indicator position</summary>
+      <description>
+        Index used when inserting the status icon into the chosen top-bar section.
+        Use − / + in preferences to reorder among other icons in that section.
+      </description>
+    </key>
+
+    <!-- Show panel icon -->
+    <key name="show-icon" type="b">
+      <default>true</default>
+      <summary>Show icon in top bar</summary>
+      <description>
+        Whether to show the microphone icon in the top panel.
+        When disabled, you can still trigger recording via keyboard shortcut
+        or by running the extension from the Extensions app.
+      </description>
+    </key>
+
+    <!-- Play sounds -->
+    <key name="play-sound" type="b">
+      <default>true</default>
+      <summary>Play sound on start/stop</summary>
+      <description>
+        Play a short sound effect when recording starts and stops.
+      </description>
+    </key>
+
+    <!-- Request timeout -->
+    <key name="request-timeout" type="i">
+      <default>60</default>
+      <summary>API request timeout (seconds)</summary>
+      <description>
+        Maximum time in seconds to wait for a transcription response.
+      </description>
+    </key>
+
+    <!-- Toggle recording shortcut -->
+    <key name="toggle-shortcut" type="as">
+      <default><![CDATA[['<Super>z']]]></default>
+      <summary>Toggle recording shortcut</summary>
+      <description>
+        Keyboard shortcut to start or stop speech recording.
+        Format: accelerator string, e.g. '&lt;Super&gt;z'.
+      </description>
+    </key>
+
+    <key name="enable-shortcuts" type="b">
+      <default>true</default>
+      <summary>Enable keyboard shortcuts</summary>
+      <description>
+        Whether the toggle-recording keyboard shortcut is active.
+      </description>
+    </key>
+
+    <!-- Sound volume -->
+    <key name="sound-volume" type="i">
+      <default>50</default>
+      <range min="0" max="100"/>
+      <summary>Sound volume (0–100)</summary>
+      <description>
+        Volume for start/stop sound effects. 0 is muted, 100 is full volume.
+      </description>
+    </key>
+  </schema>
+</schemalist>

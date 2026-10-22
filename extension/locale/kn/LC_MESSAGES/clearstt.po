@@ -1,0 +1,193 @@
+# kn translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "ಡೀಫಾಲ್ಟ್‌ಗೆ ಮರುಹೊಂದಿಸಿ"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "ಧ್ವನಿಯಿಂದ ಪಠ್ಯ"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "OpenRouter ಪೂರೈಕೆದಾರ"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr "OpenRouter ಮೂಲಕ ಟ್ರಾನ್ಸ್‌ಕ್ರಿಪ್ಷನ್‌ಗಾಗಿ API ರುಜುವಾತುಗಳು ಮತ್ತು ಮಾದರಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು."
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "API ಕೀ"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "ಮಾದರಿ"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "ತಾಪಮಾನ"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "ಸ್ಯಾಂಪ್ಲಿಂಗ್ ತಾಪಮಾನ (0 = ನಿರ್ಣಾಯಕ, 1 = ಹೆಚ್ಚು ಸೃಜನಶೀಲ)"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "ವಿನಂತಿ ಸಮಯ ಮಿತಿ"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "ಟ್ರಾನ್ಸ್‌ಕ್ರಿಪ್ಷನ್‌ಗಾಗಿ ಕಾಯುವ ಸೆಕೆಂಡುಗಳು"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "ನಡವಳಿಕೆ"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "ಮೇಲಿನ ಪಟ್ಟಿಯಲ್ಲಿ ಐಕಾನ್ ತೋರಿಸಿ"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr "When off, the icon appears only while recording or transcribing."
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "ಎಡ"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "ಮಧ್ಯ"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "ಬಲ"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "ಟ್ರೇ ಭಿತ್ತೀಯ ಸಂರेखಣೆ"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "ಮೇಲಿನ ಪಟ್ಟಿಯ ಎಡ, ಮಧ್ಯ ಅಥವಾ ಬಲ ಭಾಗದಲ್ಲಿ ಸ್ಥಿತಿ ಐಕಾನ್ ಇರಿಸಿ."
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "ಪಟ್ಟಿಯಲ್ಲಿನ ಐಕಾನ್ ಸ್ಥಾನ"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "ಆ ಭಾಗದೊಳಗಿನ ಕ್ರಮ (− / +): ಹೆಚ್ಚಿನ ಮೌಲ್ಯ = ಪಟ್ಟಿಯ ಹೊರ ಅಂಚಿಗೆ ಹತ್ತಿರ."
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "Paste placeholder text"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "Do nothing (no clipboard / paste)"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "When there is no speech"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "If the model returns no transcribed words"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "Placeholder text (e.g. …; leave empty to paste nothing)"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "ಧ್ವನಿ ಪರಿಣಾಮಗಳನ್ನು ಪ್ಲೇ ಮಾಡಿ"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭ ಮತ್ತು ನಿಲುಗಡೆಯಾದಾಗ ಟೋನ್ ಪ್ಲೇ ಮಾಡಿ"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "ಧ್ವನಿ ಪ್ರಮಾಣ"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "ಪ್ರಾರಂಭ/ನಿಲುಗಡೆ ಪರಿಣಾಮಗಳಿಗೆ ಧ್ವನಿ ಪ್ರಮಾಣ (0 = ಮ್ಯೂಟ್, 100 = ಪೂರ್ಣ)"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr "ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಲು ಅಥವಾ ನಿಲ್ಲಿಸಲು ಎಲ್ಲಿಯಾದರೂ ಕೀ ಸಂಯೋಜನೆಯನ್ನು ಒತ್ತಿರಿ."
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "ಆಫ್ ಮಾಡಿದಾಗ, ಟಾಗಲ್-ರೆಕಾರ್ಡಿಂಗ್ ಹಾಟ್‌ಕೀ ನಿಷ್ಕ್ರಿಯವಾಗಿರುತ್ತದೆ"
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "ರೆಕಾರ್ಡಿಂಗ್ ಟಾಗಲ್ ಮಾಡಿ"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "ಶಾರ್ಟ್‌ಕಟ್ ಒತ್ತಿರಿ…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr "ದಯವಿಟ್ಟು ನಿಮ್ಮ OpenRouter API ಕೀಯನ್ನು ವಿಸ್ತರಣೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಹೊಂದಿಸಿ."
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "ದಯವಿಟ್ಟು ವಿಸ್ತರಣೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಟ್ರಾನ್ಸ್‌ಕ್ರಿಪ್ಷನ್ ಮಾದರಿಯನ್ನು ಹೊಂದಿಸಿ."
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "ಧ್ವನಿಯಿಂದ ಪಠ್ಯ — ದೋಷ"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಲು ವಿಫಲವಾಗಿದೆ."
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "ದಯವಿಟ್ಟು ವಿಸ್ತರಣೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಸಿಸ್ಟಮ್ ಪ್ರಾಂಪ್ಟ್ ಹೊಂದಿಸಿ."
+
+#~ msgid "System Prompt"
+#~ msgstr "ಸಿಸ್ಟಮ್ ಪ್ರಾಂಪ್ಟ್"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "ಮೈಕ್ರೊಫೋನ್ ಐಕಾನ್ ಯಾವಾಗಲೂ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ಗೋಚರಿಸುತ್ತದೆ. ಮರೆಮಾಡಿದಾಗ, ರೆಕಾರ್ಡಿಂಗ್ "
+#~ "ಸಮಯದಲ್ಲಿ ಐಕಾನ್ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ."

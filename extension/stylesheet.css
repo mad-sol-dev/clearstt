@@ -1,0 +1,26 @@
+/* Speech to Text — GNOME Shell extension styles */
+
+/* Circle icon — idle state: white translucent */
+.speech-to-text-panel-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 2px 4px;
+}
+
+/* Recording: orange */
+.speech-to-text-panel-icon.recording {
+  background-color: #ff7700;
+}
+
+/* Transcribing: amber pulsing */
+.speech-to-text-panel-icon.transcribing {
+  background-color: #ffaa00;
+  animation: speech-to-text-panel-icon-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes speech-to-text-panel-icon-pulse {
+  0%, 100% { opacity: 1.0; }
+  50%      { opacity: 0.35; }
+}

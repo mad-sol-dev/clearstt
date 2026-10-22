@@ -1,0 +1,191 @@
+# zh_CN translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "重置为默认值"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "语音转文字"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "OpenRouter 提供商"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr "通过 OpenRouter 进行转录的 API 凭证和模型设置。"
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "API 密钥"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "模型"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "温度"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "采样温度（0 = 确定性，1 = 更有创意）"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "请求超时"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "等待转录的秒数"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "行为"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "在顶栏显示图标"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr "关闭后，仅在进行录音或转写时显示图标。"
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "左"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "中"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "右"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "托盘水平对齐"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "将状态图标放在顶部栏的左侧、中间或右侧区域。"
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "顶栏图标位置"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "在该区域内的顺序（− / +）：数值越大越靠近栏的外侧边缘。"
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "粘贴占位文本"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "不执行任何操作（不使用剪贴板/不粘贴）"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "没有语音时"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "若模型未返回已转写的文字"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "占位文本（例如 …；留空则不粘贴任何内容）"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "播放音效"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "录音开始和停止时播放提示音"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "音量"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "开始/停止效果的音量（0 = 静音，100 = 最大）"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "键盘快捷键"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr "在任意位置按下组合键以开始或停止录音。"
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "启用键盘快捷键"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "关闭时，切换录音的热键将无效"
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "切换录音"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "已禁用"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "按下快捷键…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr "请在扩展设置中配置您的 OpenRouter API 密钥。"
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "请在扩展设置中配置转录模型。"
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "语音转文字 — 错误"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "开始录音失败。"
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "请在扩展设置中配置系统提示。"
+
+#~ msgid "System Prompt"
+#~ msgstr "系统提示"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr "麦克风图标始终在面板中可见。隐藏时，图标在录音期间仍会显示。"

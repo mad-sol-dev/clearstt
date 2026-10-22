@@ -1,0 +1,192 @@
+# ja translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "デフォルトに戻す"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "音声テキスト変換"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "OpenRouter プロバイダー"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr "OpenRouter経由の文字起こしのためのAPI認証情報とモデル設定。"
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "APIキー"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "モデル"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "温度"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "サンプリング温度（0 = 決定的、1 = より創造的）"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "リクエストタイムアウト"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "文字起こしの待機秒数"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "動作"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "トップバーにアイコンを表示"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr "オフのときは、録音または文字起こし中にのみアイコンが表示されます。"
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "左"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "中央"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "右"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "トレイの水平方向の配置"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "ステータスアイコンをトップバーの左・中央・右のいずれかの領域に置きます。"
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "トップバー内のアイコン位置"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "その領域内の順序（− / +）: 値が大きいほどバーの外側の端に近づきます。"
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "プレースホルダーテキストを貼り付け"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "何もしない（クリップボード／貼り付けなし）"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "発話がない場合"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "モデルが書き起こされた語を返さない場合"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "プレースホルダーテキスト（例：…；空のままにすると貼り付けません）"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "効果音を再生"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "録音の開始時と停止時に音を鳴らす"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "音量"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "開始/停止効果の音量（0 = ミュート、100 = 最大）"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "キーボードショートカット"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr "任意の場所でキーの組み合わせを押して、録音を開始または停止します。"
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "キーボードショートカットを有効化"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "オフの場合、録音切替ホットキーは無効です"
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "録音の切り替え"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "無効"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "ショートカットを押してください…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr "拡張機能の設定でOpenRouter APIキーを設定してください。"
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "拡張機能の設定で文字起こしモデルを設定してください。"
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "音声テキスト変換 — エラー"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "録音の開始に失敗しました。"
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "拡張機能の設定でシステムプロンプトを設定してください。"
+
+#~ msgid "System Prompt"
+#~ msgstr "システムプロンプト"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "マイクアイコンは常にパネルに表示されます。非表示時も録音中は表示されます。"

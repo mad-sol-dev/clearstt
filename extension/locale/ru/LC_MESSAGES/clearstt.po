@@ -1,0 +1,195 @@
+# Russian translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 12:55+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "Сбросить на значение по умолчанию"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "Речь в текст"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "Провайдер OpenRouter"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr "API-ключ и настройки модели для транскрипции через OpenRouter."
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "API-ключ"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "Модель"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "Температура"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "Температура сэмплирования (0 = детерминированно, 1 = более креативно)"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "Таймаут запроса"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "Секунд ожидания транскрипции"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "Поведение"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "Показывать иконку в панели"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr ""
+"Если выключено, иконка показывается только во время записи или транскрипции."
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "Слева"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "По центру"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "Справа"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "Горизонтальное положение в трее"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "Разместить значок состояния в левой, центральной или правой части верхней панели."
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "Позиция значка на панели"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "Порядок в этой области (− / +): больше значение — ближе к внешнему краю панели."
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "Вставить текст-заполнитель"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "Ничего не делать (не буфер обмена / не вставлять)"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "Когда в аудио нет речи"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "Если модель не вернула ни одного слова"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr ""
+"Текст-заполнитель (например …; оставьте пустым, чтобы ничего не вставлять)"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "Звуковые эффекты"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "Проигрывать звук при старте и остановке записи"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "Громкость звука"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "Громкость звуковых эффектов (0 = тихо, 100 = максимум)"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "Горячая клавиша"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr "Нажмите комбинацию клавиш для старта/остановки записи."
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "Включить горячие клавиши"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "Когда выключено, глобальное сочетание для переключения записи неактивно."
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "Переключить запись"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "Выключено"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "Нажмите клавиши…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr "Укажите API-ключ OpenRouter в настройках расширения."
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "Укажите модель транскрипции в настройках расширения."
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "Речь в текст — ошибка"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "Не удалось начать запись."
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "Укажите системный промпт в настройках расширения."
+
+#~ msgid "System Prompt"
+#~ msgstr "Системный промпт"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "Иконка всегда видна в панели. Когда скрыта, появляется во время записи."

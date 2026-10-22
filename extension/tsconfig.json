@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM"],
+    "strict": false,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "sourceMap": false,
+    "removeComments": false,
+    "noEmit": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "node_modules/@girs/gnome-shell/dist/**/*-ambient.d.ts",
+    "node_modules/@girs/**/index.d.ts"
+  ]
+}

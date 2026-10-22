@@ -1,0 +1,195 @@
+# nl translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "Herstel standaardwaarde"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "Spraak naar tekst"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "OpenRouter-provider"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr ""
+"API-inloggegevens en modelinstellingen voor transcriptie via OpenRouter."
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "API-sleutel"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "Model"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "Temperatuur"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "Sampletemperatuur (0 = deterministisch, 1 = creatiever)"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "Verzoek time-out"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "Seconden wachten op transcriptie"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "Gedrag"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "Toon pictogram in bovenbalk"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr "Als dit uit staat, verschijnt het pictogram alleen tijdens opnemen of transcriberen."
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "Links"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "Midden"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "Rechts"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "Horizontale uitlijning in systeemvak"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "Plaats het statuspictogram in het linkse, midden- of rechterdeel van de bovenbalk."
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "Positie van het pictogram op de balk"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "Volgorde binnen dat deel (− / +): hoger = dichter bij de buitenrand van de balk."
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "Plaatsingstekst plakken"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "Niets doen (geen klembord / plakken)"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "Wanneer er geen spraak is"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "Als het model geen getranscribeerde woorden teruggeeft"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "Plaatsingstekst (bijv. …; leeg laten om niets te plakken)"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "Geluidseffecten afspelen"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "Toon afspelen bij starten en stoppen van opname"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "Geluidsvolume"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "Volume voor start/stop-effecten (0 = gedempt, 100 = volledig)"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "Sneltoets"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr ""
+"Druk ergens op een toetsencombinatie om de opname te starten of te stoppen."
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "Sneltoetsen inschakelen"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "Wanneer uitgeschakeld, is de opname-sneltoets inactief"
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "Opname schakelen"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "Druk op sneltoets…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr "Stel uw OpenRouter API-sleutel in de extensie-instellingen in."
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "Stel een transcriptiemodel in de extensie-instellingen in."
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "Spraak naar tekst — Fout"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "Opname starten mislukt."
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "Stel een systeemprompt in de extensie-instellingen in."
+
+#~ msgid "System Prompt"
+#~ msgstr "Systeemprompt"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "Microfoonpictogram altijd zichtbaar in paneel. Wanneer verborgen, "
+#~ "verschijnt het pictogram tijdens opname."

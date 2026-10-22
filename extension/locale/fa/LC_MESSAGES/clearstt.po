@@ -1,0 +1,193 @@
+# fa translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "بازنشانی به پیش‌فرض"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "صدا به متن"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "ارائه‌دهنده OpenRouter"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr "اطلاعات API و تنظیمات مدل برای رونویسی از طریق OpenRouter."
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "کلید API"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "مدل"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "دما"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "دمای نمونه‌برداری (۰ = قطعی، ۱ = خلاقانه‌تر)"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "مهلت درخواست"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "ثانیه‌های انتظار برای رونویسی"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "رفتار"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "نمایش نماد در نوار بالا"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr "وقتی خاموش است، نما فقط هنگام ضبط یا رونویسی ظاهر می‌شود."
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "چپ"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "مرکز"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "راست"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "تراز افقی سینی وضعیت"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "نماد وضعیت را در بخش چپ، مرکز یا راست نوار بالا قرار دهید."
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "موقعیت نماد در نوار"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "ترتیب در آن بخش (− / +): مقدار بیشتر = نزدیک‌تر به لبه بیرونی نوار."
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "چسباندن متن جای‌نگهدار"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "کاری نکن (بدون تخته‌گیره/چسباندن)"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "وقتی گفتاری نیست"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "اگر مدل واژهٔ رونویسی‌شده برنگرداند"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "متن جای‌نگهدار (مثلاً …؛ خالی بگذارید تا چیزی نچسبد)"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "پخش جلوه‌های صوتی"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "پخش صدا هنگام شروع و توقف ضبط"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "صدای صدا"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "صدای جلوه‌های شروع/توقف (۰ = بی‌صدا، ۱۰۰ = کامل)"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "میانبر صفحه‌کلید"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr "هر جا ترکیبی از کلیدها را فشار دهید تا ضبط شروع یا متوقف شود."
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "فعال‌سازی میانبرهای صفحه‌کلید"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "وقتی خاموش باشد، کلید میانبر ضبط غیرفعال است"
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "تغییر وضعیت ضبط"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "غیرفعال"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "میانبر را فشار دهید…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr "لطفاً کلید OpenRouter API خود را در تنظیمات افزونه تنظیم کنید."
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "لطفاً یک مدل رونویسی در تنظیمات افزونه تنظیم کنید."
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "صدا به متن — خطا"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "شروع ضبط ناموفق بود."
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "لطفاً یک پرامپت سیستم در تنظیمات افزونه تنظیم کنید."
+
+#~ msgid "System Prompt"
+#~ msgstr "پرامپت سیستم"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "نماد میکروفون همیشه در پنل قابل مشاهده است. وقتی مخفی باشد، نماد هنگام "
+#~ "ضبط ظاهر می‌شود."

@@ -1,0 +1,377 @@
+# de translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-11 21:42+0200\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:365
+msgid "Reset to default"
+msgstr "Auf Standard zurücksetzen"
+
+#: src/prefs.ts:53 src/extension.ts:897 src/extension.ts:972
+#: src/extension.ts:974 src/extension.ts:979 src/extension.ts:1094
+#: src/extension.ts:1252 src/extension.ts:1261
+msgid "Speech to Text"
+msgstr "Sprache zu Text"
+
+#: src/prefs.ts:59
+msgid "Transcription Service"
+msgstr "Transkriptionsdienst"
+
+#: src/prefs.ts:60
+msgid "Local or remote OpenAI-compatible transcription endpoint."
+msgstr "Lokaler oder entfernter OpenAI-kompatibler Transkriptions-Endpunkt."
+
+#: src/prefs.ts:65
+msgid "API base URL"
+msgstr "API-Basis-URL"
+
+#: src/prefs.ts:77
+msgid "API key (optional)"
+msgstr "API-Schlüssel (optional)"
+
+#: src/prefs.ts:83
+msgid "Language (ISO code, or \"auto\" to detect)"
+msgstr "Sprache (ISO-Code, oder \"auto\" zum Erkennen)"
+
+#: src/prefs.ts:95
+msgid "Maximum recording length"
+msgstr "Maximale Aufnahmedauer"
+
+#: src/prefs.ts:96
+msgid "Recording stops automatically after this many seconds"
+msgstr "Aufnahme stoppt automatisch nach dieser Anzahl Sekunden"
+
+#: src/prefs.ts:103
+msgid "Also write to the PRIMARY selection"
+msgstr "Auch in die PRIMARY-Auswahl schreiben"
+
+#: src/prefs.ts:104
+msgid "Overwrites the middle-click paste buffer; needed for terminals"
+msgstr "Überschreibt den Mittelklick-Puffer; für Terminals nötig"
+
+#: src/prefs.ts:110
+msgid "Model"
+msgstr "Modell"
+
+#: src/prefs.ts:122
+msgid "Temperature"
+msgstr "Temperatur"
+
+#: src/prefs.ts:123
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "Sampling-Temperatur (0 = deterministisch, 1 = kreativer)"
+
+#: src/prefs.ts:136
+msgid "Request Timeout"
+msgstr "Anfrage-Timeout"
+
+#: src/prefs.ts:137
+msgid "Seconds to wait for transcription"
+msgstr "Wartezeit in Sekunden für die Transkription"
+
+#: src/prefs.ts:149
+msgid "Behavior"
+msgstr "Verhalten"
+
+#: src/prefs.ts:154
+msgid "Show Icon in Top Bar"
+msgstr "Symbol in oberer Leiste anzeigen"
+
+#: src/prefs.ts:155
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr ""
+"Wenn ausgeschaltet, wird das Symbol nur während der Aufnahme oder "
+"Transkription angezeigt."
+
+#: src/prefs.ts:165
+msgid "Left"
+msgstr "Links"
+
+#: src/prefs.ts:166
+msgid "Center"
+msgstr "Mitte"
+
+#: src/prefs.ts:167
+msgid "Right"
+msgstr "Rechts"
+
+#: src/prefs.ts:170
+msgid "Tray Horizontal Alignment"
+msgstr "Horizontale Tray-Ausrichtung"
+
+#: src/prefs.ts:171
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr ""
+"Statussymbol in der linken, mittleren oder rechten Zone der oberen Leiste "
+"platzieren."
+
+#: src/prefs.ts:211
+msgid "Top Bar Icon Position"
+msgstr "Symbolposition in der Leiste"
+
+#: src/prefs.ts:212
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr ""
+"Reihenfolge in diesem Bereich (− / +): höher = näher am äußeren Rand der "
+"Leiste."
+
+#: src/prefs.ts:226
+msgid "Paste placeholder text"
+msgstr "Platzhaltertext einfügen"
+
+#: src/prefs.ts:227
+msgid "Do nothing (no clipboard / paste)"
+msgstr "Nichts tun (keine Zwischenablage / kein Einfügen)"
+
+#: src/prefs.ts:230
+msgid "When there is no speech"
+msgstr "Wenn keine Sprache erkannt wird"
+
+#: src/prefs.ts:231
+msgid "If the model returns no transcribed words"
+msgstr "Wenn das Modell keine transkribierten Wörter zurückgibt"
+
+#: src/prefs.ts:261
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "Platzhaltertext (z. B. …; leer lassen, um nichts einzufügen)"
+
+#: src/prefs.ts:286
+msgid "Clipboard"
+msgstr "Zwischenablage"
+
+#: src/prefs.ts:287
+msgid ""
+"The transcript is pasted through the clipboard, so it has to overwrite what "
+"is in there."
+msgstr ""
+"Das Diktat wird über die Zwischenablage eingefügt und überschreibt daher "
+"deren Inhalt."
+
+#: src/prefs.ts:292
+msgid "Restore Clipboard After Pasting"
+msgstr "Zwischenablage nach dem Einfügen wiederherstellen"
+
+#: src/prefs.ts:293
+msgid ""
+"Put the previous content back once the transcript has been pasted. CLIPBOARD "
+"only, not PRIMARY."
+msgstr ""
+"Legt den vorherigen Inhalt zurück, sobald das Diktat eingefügt wurde. Nur "
+"CLIPBOARD, nicht PRIMARY."
+
+#: src/prefs.ts:299
+msgid "Restore Delay"
+msgstr "Verzögerung"
+
+#: src/prefs.ts:300
+msgid ""
+"Milliseconds to wait after the paste keystroke. Too short and the target "
+"pastes the old content."
+msgstr ""
+"Millisekunden nach dem Einfüge-Tastendruck. Zu kurz, und die Anwendung fügt "
+"den alten Inhalt ein."
+
+#: src/prefs.ts:313
+msgid "Recent Dictations Kept"
+msgstr "Vorgehaltene Diktate"
+
+#: src/prefs.ts:314
+msgid ""
+"Offered in the panel menu for copying back — the way out when a paste went "
+"nowhere. Memory only, 0 = off."
+msgstr ""
+"Im Panel-Menü zum Zurückkopieren angeboten — der Ausweg, wenn ein Einfügen "
+"ins Leere ging. Nur im Arbeitsspeicher, 0 = aus."
+
+#: src/prefs.ts:326
+msgid "Play Sound Effects"
+msgstr "Soundeffekte abspielen"
+
+#: src/prefs.ts:327
+msgid "Play tone when recording starts and stops"
+msgstr "Ton bei Start und Stopp der Aufnahme abspielen"
+
+#: src/prefs.ts:333
+msgid "Sound Volume"
+msgstr "Lautstärke"
+
+#: src/prefs.ts:334
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "Lautstärke für Start/Stopp-Effekte (0 = stumm, 100 = voll)"
+
+#: src/prefs.ts:346
+msgid "Keyboard Shortcut"
+msgstr "Tastenkombination"
+
+#: src/prefs.ts:347
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr ""
+"Drücken Sie eine Tastenkombination an beliebiger Stelle, um die Aufnahme zu "
+"starten oder zu stoppen."
+
+#: src/prefs.ts:352
+msgid "Enable Keyboard Shortcuts"
+msgstr "Tastenkombinationen aktivieren"
+
+#: src/prefs.ts:353
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "Wenn deaktiviert, ist die Aufnahme-Umschalttaste inaktiv"
+
+#: src/prefs.ts:359
+msgid "Toggle Recording"
+msgstr "Aufnahme umschalten"
+
+#: src/prefs.ts:383 src/prefs.ts:421
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: src/prefs.ts:441
+msgid "Press shortcut…"
+msgstr "Tastenkombination drücken…"
+
+#: src/extension.ts:520
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: src/extension.ts:521
+msgid "German"
+msgstr "Deutsch"
+
+#: src/extension.ts:522
+msgid "English"
+msgstr "Englisch"
+
+#: src/extension.ts:754 src/extension.ts:993
+msgid "Checking service…"
+msgstr "Prüfe Dienst …"
+
+#: src/extension.ts:761 src/extension.ts:840
+msgid "Language"
+msgstr "Sprache"
+
+#: src/extension.ts:780
+msgid "Output in English"
+msgstr "Ausgabe auf Englisch"
+
+#: src/extension.ts:781
+msgid "Remove filler words"
+msgstr "Füllwörter entfernen"
+
+#: src/extension.ts:782
+msgid "Mark speech pauses"
+msgstr "Sprechpausen markieren"
+
+#: src/extension.ts:802
+msgid "Unload model (free VRAM)"
+msgstr "Modell entladen (VRAM freigeben)"
+
+#: src/extension.ts:806
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: src/extension.ts:839
+msgid "Service default"
+msgstr "Vorgabe des Dienstes"
+
+#: src/extension.ts:868
+msgid "Recent dictations"
+msgstr "Letzte Diktate"
+
+#: src/extension.ts:871
+msgid "Nothing dictated yet"
+msgstr "Noch nichts diktiert"
+
+#: src/extension.ts:897
+msgid "Copied to clipboard."
+msgstr "In die Zwischenablage kopiert."
+
+#: src/extension.ts:972
+msgid "Model unloaded, VRAM released."
+msgstr "Modell entladen, VRAM freigegeben."
+
+#: src/extension.ts:974 src/extension.ts:979
+msgid "Could not unload the model."
+msgstr "Modell konnte nicht entladen werden."
+
+#: src/extension.ts:989
+msgid "No service URL configured"
+msgstr "Keine Dienst-URL konfiguriert"
+
+#: src/extension.ts:997
+msgid "Invalid service URL"
+msgstr "Ungültige Dienst-URL"
+
+#: src/extension.ts:1006 src/extension.ts:1016
+msgid "Service unreachable"
+msgstr "Dienst nicht erreichbar"
+
+#: src/extension.ts:1012
+msgid "Ready"
+msgstr "Bereit"
+
+#: src/extension.ts:1013
+msgid "Idle"
+msgstr "Im Leerlauf"
+
+#: src/extension.ts:1095
+msgid "Maximum recording length reached — transcribing now."
+msgstr "Maximale Aufnahmedauer erreicht — wird jetzt transkribiert."
+
+#: src/extension.ts:1253
+msgid "Please set the API base URL in extension settings."
+msgstr "Bitte die API-Basis-URL in den Erweiterungseinstellungen setzen."
+
+#: src/extension.ts:1262
+msgid "Please set a transcription model in extension settings."
+msgstr ""
+"Bitte legen Sie ein Transkriptionsmodell in den Erweiterungseinstellungen "
+"fest."
+
+#: src/extension.ts:1285 src/extension.ts:1406
+msgid "Speech to Text — Error"
+msgstr "Sprache zu Text — Fehler"
+
+#: src/extension.ts:1286
+msgid "Failed to start recording."
+msgstr "Aufnahme konnte nicht gestartet werden."
+
+#~ msgid "OpenRouter Provider"
+#~ msgstr "OpenRouter-Anbieter"
+
+#~ msgid "API credentials and model settings for transcription via OpenRouter."
+#~ msgstr ""
+#~ "API-Anmeldedaten und Modelleinstellungen für die Transkription über "
+#~ "OpenRouter."
+
+#~ msgid "API Key"
+#~ msgstr "API-Schlüssel"
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr ""
+#~ "Bitte legen Sie einen System-Prompt in den Erweiterungseinstellungen fest."
+
+#~ msgid "System Prompt"
+#~ msgstr "System-Prompt"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "Mikrofonsymbol immer im Panel sichtbar. Wenn ausgeblendet, erscheint das "
+#~ "Symbol während der Aufnahme."

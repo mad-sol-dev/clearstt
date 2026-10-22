@@ -1,0 +1,16 @@
+[project]
+name = "clearstt-server"
+version = "0.1.0"
+description = "Local STT service with an OpenAI-compatible transcription endpoint (faster-whisper)"
+requires-python = ">=3.11"
+dependencies = [
+    "faster-whisper>=1.1.0",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "python-multipart>=0.0.9",
+    "nvidia-cublas-cu12",
+    "nvidia-cudnn-cu12>=9.0",
+]
+
+[tool.uv]
+package = false

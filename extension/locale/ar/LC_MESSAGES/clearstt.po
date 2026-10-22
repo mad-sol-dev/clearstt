@@ -1,0 +1,194 @@
+# ar translation for Speech to Text (STT) GNOME Shell extension.
+# Copyright (C) 2026
+# This file is distributed under the same license as the extension.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-stt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 20:48+0300\n"
+"PO-Revision-Date: 2026-05-13 15:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#: src/prefs.ts:19 src/prefs.ts:286
+msgid "Reset to default"
+msgstr "إعادة التعيين إلى الافتراضي"
+
+#: src/prefs.ts:53 src/extension.ts:688 src/extension.ts:697
+msgid "Speech to Text"
+msgstr "الصوت إلى نص"
+
+#: src/prefs.ts:59
+msgid "OpenRouter Provider"
+msgstr "مزود OpenRouter"
+
+#: src/prefs.ts:60
+msgid "API credentials and model settings for transcription via OpenRouter."
+msgstr "بيانات اعتماد API وإعدادات النموذج للنسخ عبر OpenRouter."
+
+#: src/prefs.ts:65
+msgid "API Key"
+msgstr "مفتاح API"
+
+#: src/prefs.ts:71
+msgid "Model"
+msgstr "النموذج"
+
+#: src/prefs.ts:83
+msgid "Temperature"
+msgstr "الحرارة"
+
+#: src/prefs.ts:84
+msgid "Sampling temperature (0 = deterministic, 1 = more creative)"
+msgstr "حرارة العينة (0 = حتمية، 1 = أكثر إبداعًا)"
+
+#: src/prefs.ts:97
+msgid "Request Timeout"
+msgstr "مهلة الطلب"
+
+#: src/prefs.ts:98
+msgid "Seconds to wait for transcription"
+msgstr "ثواني الانتظار للنسخ"
+
+#: src/prefs.ts:110
+msgid "Behavior"
+msgstr "السلوك"
+
+#: src/prefs.ts:115
+msgid "Show Icon in Top Bar"
+msgstr "إظهار الأيقونة في الشريط العلوي"
+
+#: src/prefs.ts:116
+msgid "When off, the icon appears only while recording or transcribing."
+msgstr "عند التعطيل، يظهر الرمز فقط أثناء التسجيل أو النسخ."
+
+#: src/prefs.ts:126
+msgid "Left"
+msgstr "يسار"
+
+#: src/prefs.ts:127
+msgid "Center"
+msgstr "وسط"
+
+#: src/prefs.ts:128
+msgid "Right"
+msgstr "يمين"
+
+#: src/prefs.ts:131
+msgid "Tray Horizontal Alignment"
+msgstr "محاذاة أفقية لمنطقة الإعلام"
+
+#: src/prefs.ts:132
+msgid ""
+"Place the status icon in the left, center, or right section of the top bar."
+msgstr "ضع أيقونة الحالة في الجانب الأيسر أو الوسط أو الأيمن من الشريط العلوي."
+
+#: src/prefs.ts:172
+msgid "Top Bar Icon Position"
+msgstr "موضع الأيقونة في الشريط"
+
+#: src/prefs.ts:173
+msgid ""
+"Order within that section (− / +): higher = closer to the outer edge of the "
+"bar."
+msgstr "الترتيب ضمن هذا القسم (− / +): كلما زاد الرقم اقترب من الحافة الخارجية للشريط."
+
+#: src/prefs.ts:187
+msgid "Paste placeholder text"
+msgstr "لصق نص العنصر النائب"
+
+#: src/prefs.ts:188
+msgid "Do nothing (no clipboard / paste)"
+msgstr "دون فعل أي شيء (بدون الحافظة أو اللصق)"
+
+#: src/prefs.ts:191
+msgid "When there is no speech"
+msgstr "عند عدم وجود كلام"
+
+#: src/prefs.ts:192
+msgid "If the model returns no transcribed words"
+msgstr "إذا لم يُرجع النموذج أي كلمات منسوخة"
+
+#: src/prefs.ts:222
+msgid "Placeholder text (e.g. …; leave empty to paste nothing)"
+msgstr "نص العنصر النائب (مثل …؛ اتركه فارغًا لعدم لصق شيء)"
+
+#: src/prefs.ts:247
+msgid "Play Sound Effects"
+msgstr "تشغيل المؤثرات الصوتية"
+
+#: src/prefs.ts:248
+msgid "Play tone when recording starts and stops"
+msgstr "تشغيل نغمة عند بدء التسجيل وإيقافه"
+
+#: src/prefs.ts:254
+msgid "Sound Volume"
+msgstr "مستوى الصوت"
+
+#: src/prefs.ts:255
+msgid "Volume for start/stop effects (0 = mute, 100 = full)"
+msgstr "مستوى صوت تأثيرات البدء/الإيقاف (0 = كتم، 100 = كامل)"
+
+#: src/prefs.ts:267
+msgid "Keyboard Shortcut"
+msgstr "اختصار لوحة المفاتيح"
+
+#: src/prefs.ts:268
+msgid "Press a key combination anywhere to start or stop recording."
+msgstr "اضغط على مجموعة مفاتيح في أي مكان لبدء التسجيل أو إيقافه."
+
+#: src/prefs.ts:273
+msgid "Enable Keyboard Shortcuts"
+msgstr "تفعيل اختصارات لوحة المفاتيح"
+
+#: src/prefs.ts:274
+msgid "When off, the toggle-recording shortcut is inactive."
+msgstr "عند الإيقاف، يكون مفتاح تبديل التسجيل غير نشط"
+
+#: src/prefs.ts:280
+msgid "Toggle Recording"
+msgstr "تبديل التسجيل"
+
+#: src/prefs.ts:304 src/prefs.ts:342
+msgid "Disabled"
+msgstr "معطل"
+
+#: src/prefs.ts:362
+msgid "Press shortcut…"
+msgstr "اضغط على الاختصار…"
+
+#: src/extension.ts:689
+msgid "Please set your OpenRouter API key in extension settings."
+msgstr "يرجى تعيين مفتاح OpenRouter API في إعدادات الإضافة."
+
+#: src/extension.ts:698
+msgid "Please set a transcription model in extension settings."
+msgstr "يرجى تعيين نموذج النسخ في إعدادات الإضافة."
+
+#: src/extension.ts:718 src/extension.ts:791
+msgid "Speech to Text — Error"
+msgstr "الصوت إلى نص — خطأ"
+
+#: src/extension.ts:719
+msgid "Failed to start recording."
+msgstr "فشل بدء التسجيل."
+
+#~ msgid "Please set a system prompt in extension settings."
+#~ msgstr "يرجى تعيين موجه النظام في إعدادات الإضافة."
+
+#~ msgid "System Prompt"
+#~ msgstr "موجه النظام"
+
+#~ msgid ""
+#~ "Microphone icon always visible in panel. When hidden, icon still appears "
+#~ "during recording."
+#~ msgstr ""
+#~ "أيقونة الميكروفون مرئية دائمًا في اللوحة. عند الإخفاء، تظهر الأيقونة أثناء "
+#~ "التسجيل."
